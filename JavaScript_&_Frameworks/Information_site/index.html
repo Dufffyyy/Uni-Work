@@ -1,0 +1,204 @@
+<!-- Student ID: u3092649, Assignment 3, Date Last Modified: 12/05/2017 -->
+
+<html>
+    <!--Note all Divs for WOW are the animation effects -->
+    
+     <!--Link to custom CSS file-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <!-- Link to CSS LIBRARIES -->
+    <link rel="stylesheet" href="css/default.css" type="text/css">
+    <link rel="stylesheet" href="css/ideal-image-slider.css" type="text/css">
+    <link rel="stylesheet" href="css/animation.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css" type="text/css">
+    <link rel="stylesheet" href="css/morris.css" type="text/css">
+    
+  <head>
+      <!-- META DATA -->
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+		
+    <!-- Tab Title -->
+    <title>Artificial intelligence Info Page</title>
+  </head>
+
+    <!--Navigation bar-->
+    <nav>
+      <ul>
+        <li><a href="#1">Home</a></li>
+        <li><a href="#2">AI Types</a></li>
+        <li><a href="#3">Algorithms</a></li>
+        <li><a href="#4">Stats</a></li>
+      </ul>
+    </nav>
+    
+  <body>
+      
+   <!--Section is for the umbrella for the sub-sections-->
+    <div class="sections">
+     <!--Section 1 intro/home -->    
+      <section id="1">
+        <div class="animated container logo bounceInDown" data-wow-duration="5s">
+          <h2 class="horizontal-bordered">Artificial intelligence Info Page</h2>
+          </div>
+          
+          <div class="col-lg-4 wow fadeInRight" data-wow-duration="1s" data-wow-iteration="1">
+          <div id="slider">
+            <img src="assets/SliderAI1.jpg">
+            <img src="assets/SliderAI2.jpg">
+            <img src="assets/SliderAI3.jpg">
+            <img src="assets/SliderAI4.jpg">
+          </div>
+          </div>
+          
+        <div id="scrollbutton" class="animated infinite bounce">
+          <div class="arrow"></div>
+          </div>
+          
+        </section>
+    
+      <!--Section 2 Types of AI-->    
+      <section id="2" class="aiFlip">
+          <div class="col-lg-4 wow fadeInDown" data-wow-duration="2s" data-wow-iteration="1">
+          <h2 class="horizontal-bordered">Types of Artifical Intelligence</h2>
+          </div>
+        
+        <div class="col-lg-4 wow fadeInRight" data-wow-duration="2s" data-wow-iteration="1">
+            <div id="typeAi1" class="flip" onclick="flip(1)">
+                <div class="card">
+                    <div class="face front">
+                        Reactive machines
+                    </div>
+                    <div class="face back">
+                        The most basic types of AI systems are purely reactive, and have the ability neither to form memories nor to use past experiences to inform current decisions. 
+                    </div>
+                </div>
+            </div>
+          <div id="typeAi2" class="flip" onclick="flip(2)">
+            <div class="card">
+                <div class="face front">
+                    Limited memory
+                </div>
+                <div class="face back">
+                    class contains machines can look into the past. Self-driving cars do some of this already. For example, they observe other cars’ speed and direction. That can’t be done in a just one moment, but rather requires identifying specific objects and monitoring them over time.
+                </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="col-lg-4 wow fadeInLeft" data-wow-duration="2s" data-wow-iteration="1">
+         <div id="typeAi3" class="flip" onclick="flip(3)">
+            <div class="card">
+                <div class="face front">Theory of mind </div>
+                <div class="face back">
+                    If AI systems are indeed ever to walk among us, they’ll have to be able to understand that each of us has thoughts and feelings and expectations for how we’ll be treated. And they’ll have to adjust their behavior accordingly.
+                </div>
+            </div>
+        </div>
+          
+        <div id="typeAi4" class="flip" onclick="flip(4)">
+            <div class="card">
+                
+                <div class="face front">
+                    Self awareness
+                </div>
+                <div class="face back">
+                    While we are probably far from creating machines that are self-aware, we should focus our efforts toward understanding memory, learning and the ability to base decisions on past experiences. This is an important step to understand human intelligence on its own. And it is crucial if we want to design or evolve machines that are more than exceptional at classifying what they see in front of them.
+                </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+        
+        <!--Section 3 Alorithms-->  
+        <section id="3">
+            <div class="col-lg-4 wow fadeInRight" data-wow-duration="2s" data-wow-iteration="1">
+                <h2 class="horizontal-bordered">Artifical Intelligence Algorithms</h2>
+            </div>
+            
+        <div class="col-lg-4 wow fadeInLeft" data-wow-duration="2s" data-wow-iteration="1">
+            <div id="accordion">
+              <h3>Crunchers</h3>
+                  <div>
+                    <p>These algorithms use small repetitive steps guided with simple rules to number crunch a complex problem. We give these algorithms the data, and they come back with an answer. If we don’t like the answer we give the algorithms more data to fine-tune their answer. Crunchers are good at classifying customers, estimating project durations, and analyzing survey data to understand our business culture. </p>
+                  </div>
+              <h3>Guides</h3>
+                  <div>
+                    <p>These algorithms guide us on how to best navigate a policy, process, or workflow based on historic actions that were successful. Guides are good at coordinating a lot of moving parts needed to understand and execute things like risk management, strategic change, and complex project management.
+                    </p>
+                  </div>
+              <h3>Advisors</h3>
+                  <div>
+                    <p>These algorithms advise us on our best options by providing us with predictions, rankings, and likelihood-of-success based on historic patterns. Advisors are good at advising us on decision-making, planning, and risk mitigation.
+                    </p>
+                  </div>
+              <h3>Predictors</h3>
+                  <div>
+                    <p>These algorithms predict future human behaviors and events by using small repeatable decisions and judgments that interpret historic behaviors and events. Predictors are good at business planning, market forecasting, brand management, health diagnosis, and predicting consumer behaviors, brand attractiveness, fraud, marketing opportunities, weather events, and disease outbreaks.
+                    </p>
+                  </div>
+                <h3>Strategists</h3>
+                <div>
+                    <p>These algorithms strategically anticipate behaviors and plan accordingly. Strategists look past the data uncovering insights and innovative opportunities. They do this by applying a combination of short-term and long-term strategic rules along with information they learned about the people involved and how these people react in various environments. Strategists are good at forecasting market demand, customer attrition, human productivity, and employee attrition.
+                    </p>
+                </div>
+                <h3>Strategists</h3>
+                  <div>
+                    <p>These algorithms strategically anticipate behaviors and plan accordingly. Strategists look past the data uncovering insights and innovative opportunities. They do this by applying a combination of short-term and long-term strategic rules along with information they learned about the people involved and how these people react in various environments. Strategists are good at forecasting market demand, customer attrition, human productivity, and employee attrition.
+                    </p>
+                  </div>
+                <h3>Lifters</h3>
+                  <div>
+                    <p>These algorithms help us by automating our mundane and repetitive work freeing us to do what we’ve been hired to do. These algorithms have some subject matter expertise allowing them to do our analytical heavy lifting. Lifters are good at analyzing and recognizing repeatable patterns and gaps in regulations, fraud, risks, improvements, transformations, opportunities, and innovations.
+                    </p>
+                   </div>
+                <h3>Supervisors</h3>
+                  <div>
+                    <p>These algorithms have key subject matter expertise for how our business works. They manage us and our efforts so that we and the business stay healthy, productive, and financially strong. These algorithms orchestrate us and all the other algorithms to help us meet our strategic long-term objectives.
+                    </p>
+                 </div>
+               </div>
+           </div>
+        </section>    
+        
+    <!--Section 4 Graphs-->  
+      <section id="4">
+          
+        <div class="col-lg-4 wow fadeInDown" data-wow-duration="2s" data-wow-iteration="1">
+            <h2 class="horizontal-bordered">Artifical Intelligence Statictics</h2>
+            </div>
+
+            <div class="col-lg-4 wow fadeInLeft" data-wow-duration="2s" data-wow-iteration="1">
+              <p class="statsLabel1">Companies buy more data (CrowdFlower.com millon of rows sold)</p>   
+              <div class="stats" id="rowSoldStats" style="height: 35%; width: 95%;"></div>
+            </div>
+
+            <div class="col-lg-4 wow fadeInRight" data-wow-duration="2s" data-wow-iteration="1">
+                <p class="statsLabel2">AI software projects at Google</p>   
+                <div class="stats" id="googleProjectsStats" style="height: 35%; width: 95%;"></div>
+         </div>
+      </section>
+        
+    </div>
+      
+    <!--Foorter student information-->  
+    <div class="col-lg-4 wow fadeInLeft" data-wow-duration="2s" data-wow-iteration="1">  
+        <footer class="studentDetails"> Introduction to Javascript & Frameworks <br> Assignment 3 - Information site <br> Semester 1 - 2017 <br> Student: u3092649 </footer>
+    </div>
+      
+    <!--Used to link the Javascript libraries -->
+    <script type="application/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="application/javascript" src="js/morris.min.js"></script>
+    <script type="application/javascript" src="js/ideal-image-slider.js"></script>
+    <script type="application/javascript" src="js/wow.min.js"></script>
+    <script type="application/javascript" src="js/raphael.min.js"></script>
+    <script type="application/javascript" src="js/jquery-ui.min.js"></script>
+      
+    <!--Custom Javascript File-->  
+    <script type="application/javascript" src="script.js"></script>
+      
+  </body>
+</html>

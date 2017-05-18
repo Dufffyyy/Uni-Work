@@ -1,0 +1,220 @@
+
+/*
+Student ID: u3092649, Assignment 3
+CSS for for I
+Date Last Modified: 12/05/2017
+*/
+
+/*Site font formatting*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*genericmargin formatting*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*sections heading format*/
+h2 { 
+margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav {
+  width: 100%;
+  height: 60px;   
+  position: fixed; 
+  top: 0;
+  background: #222930;
+  z-index: 150;
+  border-bottom: 100px;
+  border-bottom: 1px solid #fff;
+}
+
+nav ul {
+  padding: 20px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav ul li a {
+  padding: 10px 0;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+nav ul li a:hover {
+  color: #4EB1BA;
+}
+a.active {
+  border-bottom: 2px solid #4EB1BA;
+}
+
+/* Sections formatting */
+section {
+  width: 100%;
+  padding: 50px;
+  background: #222930;
+  height: 600px;
+  text-align: center;
+
+  
+}
+.sections section:first-child {
+  margin-top: 60px;
+}
+
+/*Jumping arrow formating*/
+.arrow {
+  content:'';
+  display: block;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  height: 20px;
+  width: 20px;
+  position: inherit;
+  margin-left: 50%;
+  margin-top: 5%;
+}
+
+/*
+The css elements below all relate to the animation of the AI types
+This include the formatting of front and back along with the animation effects
+*/
+.flip {
+    -webkit-perspective: 800;
+    display: inline-block;
+    width: 40%;
+    height: 45%;
+    position: relative;
+    padding: 10px;
+    
+}
+.flip .card.flipped {
+    -webkit-transform: rotatex(-180deg);
+}
+
+.flip .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    
+}
+.flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    z-index: 2;
+    font-family: Georgia;
+    font-size: 4vw; 
+}
+
+.card .face {
+    padding: 10px;
+}
+
+.flip .card .front {
+    position: absolute;
+    z-index: 1;
+    background: #4EB1BA;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.flip .card .back {
+    -webkit-transform: rotatex(-180deg);
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5vw; 
+    border-radius: 10px;
+}
+
+/*Header of each section formatting*/
+h2 {
+  color: #fff;
+  margin-bottom: 4rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Header of each section effect*/
+.horizontal-bordered {
+  text-align: center;
+  overflow: hidden;
+}
+.horizontal-bordered::before, .horizontal-bordered::after {
+  content: '';
+  background: #4EB1BA;
+  width: 50%;
+  display: inline-block;
+  height: 2px;
+  margin-top: -2px;
+  vertical-align: middle;
+  position: relative;
+}
+.horizontal-bordered::before {
+  margin-left: -50%;
+  left: -3rem;
+}
+.horizontal-bordered::after {
+  margin-right: -50%;
+  right: -3rem;
+}
+
+/*graphs formatting*/
+.stats text {
+  fill: #fff;
+  outline: none;    
+}
+
+/*graph titles fromatting*/
+.statsLabel1 {
+    color: #fff;
+    padding-bottom: 10px;
+}
+.statsLabel2 {
+    color: #fff;
+    padding-top: 10px;  
+}
+
+/*graph display formatting*/
+.stats {
+    display: inline-block;
+    background: #222930;
+    color: white;    
+}
+
+/*Accordion formatting*/
+.ui-accordion-header.ui-state-active {
+    background-color: #4EB1BA; 
+}
+
+/*Footer formatting*/
+.studentDetails{
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+footer {
+  height: 100px;
+  background: #34495e;
+}

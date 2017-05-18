@@ -1,0 +1,57 @@
+<!-- Student ID: u3092649, Assignment 2, Date Last Modified: 05/04/2017 -->
+
+<!DOCTYPE html>
+ <html>
+    <head>
+         <title>Personality Quiz u3092649</title>
+         <!--Link to the CSS File-->
+         <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+        
+     <body>
+          <!--Title of the quiz -->
+         <h1 id="quizHeading">What level of star wars fan are you?</h1>
+         
+        <!--This section is for the display of the quiz content includeing question title an options to be selected (hidden upon quiz completeion) -->
+        <div id="question">
+          <h3 id="questionDetails"></h3>
+          <div id="answers-container">
+              
+            <!--User selection 1 -->
+            <div class="answer" onclick="userSelection('optionTextA')">
+              <div class="option A">A</div>
+              <p id="optionTextA"></p>
+            </div>
+              
+            <!--User selection 2 -->
+            <div class="answer" onclick="userSelection('optionTextB')">
+              <div class="option B">B</div>
+              <p id="optionTextB"></p>
+            </div>
+            
+            <!--User selection 1 -->
+            <div class="answer" onclick="userSelection('optionTextC')">
+              <div class="option C">C</div>
+              <p id="optionTextC"></p>
+            </div>
+          </div>
+        </div>
+         
+         <!--This section is for the display of the final result screen (Hidden until the quiz is completed) -->
+        <div id="score">
+            <p id="scoreOutcome"></p>
+            <p id="outcomeDetails"></p>
+            <button class="button" id="buttonRestart" onclick="quizRestart()">Restart</button>
+        </div>
+         
+        <!--This section desplays the progress bar at the bottom of the screen (max is reset to the number of total number of questions) -->
+        <div class="progress">
+          <div><progress id="progress" max="100" value="0"></progress></div>
+        <div>Your progress</div>
+        </div>	
+      
+     </body>
+     
+      <!--Used to link the Javascript file -->
+     <script type="application/javascript" src="script.js"></script>
+ </html>

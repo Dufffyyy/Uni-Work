@@ -1,0 +1,133 @@
+/*
+Student ID: u3092649, Assignment 2
+CSS file for quiz
+Date Last Modified: 05/04/2017
+*/
+
+body
+{
+  font-family:Arial;
+  background-color:#333645;
+  color:#9B9BA3;
+}
+
+h1
+{
+  color:#cccccc;
+}
+
+#quizHeading{
+    position: relative;
+    text-align:center;
+
+}
+
+#score{
+    position: relative;
+    text-align:center;
+}
+
+#question
+{
+  margin:auto;
+  text-align:center;
+  width:70%;
+  border:1px #90A4AE solid;
+  border-radius:3px;
+  padding-top:10px;
+}
+
+#answers-container
+{
+  border-top:1px #90A4AE solid;
+  margin:0;
+  padding:0;
+}
+
+.answer
+{
+  position:relative;
+  padding:30px 0px 30px 0px;
+  margin:0;
+  display:inline-block;
+  width: calc(98% / 3);
+}
+
+.answer p
+{
+  margin:0;
+  text-align:center;
+}
+
+.answer:hover
+{
+ background-color:rgba(0,0,0,0.5);
+  cursor:pointer;
+}
+
+.answer:hover .option
+{
+  transform:scale(1.1);
+}
+
+.answer .option
+{
+  transition-duration:0.3s;
+  color:#ffffff;
+  background-color:rgba(0,0,0,1.0);
+  border:2px #90A4AE solid;
+  border-radius:40px;
+  padding:5px;
+  width:18px;
+  height:18px;
+  float:left;
+  margin-top:-45px;
+  margin-left:45%;
+}
+
+.option.A
+{
+  background-color:#27A2E5;
+}
+
+.option.B
+{
+  background-color:#009688;
+}
+
+.option.C
+{
+  background-color:#C64B55;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    background-color: #009688;
+    color: white;
+}
+
+.progress {
+	width: 100%;
+	padding-top: 2em;
+	margin-top: 2em;
+}
+#progress {
+	width: 100%;
+}
+
+
